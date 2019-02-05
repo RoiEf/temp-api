@@ -42,4 +42,6 @@ router.get("/:number", (req, res, next) => {
   console.log("/public API was called with number.");
 });
 
+connection.end();
+
 module.exports = router;
