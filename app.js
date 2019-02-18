@@ -3,6 +3,7 @@ const aboutRoutes = require("./api/about");
 const servicesRoutes = require("./api/services");
 const iotApi = require("./api/IoT_API");
 const PublicRoutes = require("./api/public");
+const stationsRoutes = require("./api/stations");
 const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const cors = require("cors");
@@ -22,6 +23,7 @@ app.use("/about", aboutRoutes);
 app.use("/services", servicesRoutes);
 app.use("/iotApi", iotApi);
 app.use("/public", PublicRoutes);
+app.use("/stations", stationsRoutes);
 
 // error handling
 // 404 Not found page errors
